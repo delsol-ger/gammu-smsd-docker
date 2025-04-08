@@ -1,5 +1,8 @@
 # gammu-smsd-docker
-a minimalistic gammu-smsd docker to send sms and receive them as text files
+a minimalistic gammu-smsd docker to send sms or receive sms as text files.
+I created this, because other solutions included web-UIs and databases. This is simpler.
+
+
 
 you have to mount the USB-Surfstick (mostly /dev/ttyUSB0)
 ```
