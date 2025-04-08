@@ -22,3 +22,10 @@ example docker run command:
 ```
 docker run -d --rm --name gammu --device=/dev/ttyUSB0:/dev/ttyUSB0 -v /mnt/user/appdata/gammu/config/.gammurc:/root/.gammurc -v /mnt/user/appdata/gammu/config/.gammurc:/etc/gammu-smsdrc --volume /mnt/user/appdata/gammu/spool/:/var/spool/ gammu
 ```
+
+
+
+Send SMS with:
+```
+docker exec gammu sh -c "gammu-smsd-inject TEXT 0049123456789 -text "Hallooo again""
+```
